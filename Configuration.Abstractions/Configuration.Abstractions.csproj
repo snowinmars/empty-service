@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyName>EmptyService.Configuration.Abstractions</AssemblyName>
+        <RootNamespace>EmptyService.Configuration.Abstractions</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Include="..\_configuration\build\dotnet\CommonAssemblyAttributes.cs">
+        <Link>AssemblyInfo\CommonAssemblyAttributes.cs</Link>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CommonEntities\CommonEntities.csproj" />
+    </ItemGroup>
+
+</Project>

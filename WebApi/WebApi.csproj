@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+        <AssemblyName>EmptyService.WebApi</AssemblyName>
+        <RootNamespace>EmptyService.WebApi</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DependencyResolver\DependencyResolver.csproj" />
+      <ProjectReference Include="..\Job\Job.csproj" />
+      <ProjectReference Include="..\Logger.Abstractions\Logger.Abstractions.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="..\_configuration\build\dotnet\CommonAssemblyAttributes.cs">
+        <Link>AssemblyInfo\CommonAssemblyAttributes.cs</Link>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="5.0.1" />
+      <PackageReference Include="Serilog.AspNetCore" Version="3.1.0" />
+    </ItemGroup>
+
+</Project>

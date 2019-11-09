@@ -1,0 +1,13 @@
+{
+	"dbUsageName": {
+		"host": "https://ya.ru",
+		"port": 80,
+		"username": "user",
+		"password": "pwd",
+		"database-name": "mydb"
+	},
+	"log": {
+		"filepath": "_logs/main.log",
+		"level": "Debug"
+	}
+}
